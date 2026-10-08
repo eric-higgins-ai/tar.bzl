@@ -496,6 +496,7 @@ assert_unused_listing(
         "tar/tests/unused/info",
         "tar/tests/unused/pkg",
         "tar/tests/unused/space in name.txt",
+        "tar/tests/tar15.unused_inputs.txt",
     ],
 )
 

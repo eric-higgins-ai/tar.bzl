@@ -362,6 +362,7 @@ def _configured_unused_inputs_file(ctx, srcs, keep):
                 )                                                                             \\
                 | "$COREUTILS" cut -d' ' -f 2-                                                \\
                 > "$UNUSED_INPUTS"
+            printf '%s\\n' "$UNUSED_INPUTS" >> "$UNUSED_INPUTS"
         ''',
         env = {
             "COREUTILS": coreutils.path,
